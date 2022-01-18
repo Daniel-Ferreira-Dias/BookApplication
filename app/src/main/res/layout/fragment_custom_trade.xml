@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_dialog_corner"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Realize a sua trade"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CECFCF" />
+
+    <LinearLayout
+        android:id="@+id/userInteraction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12sp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/currentUserProfilePic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:padding="5dp"
+            android:src="@drawable/usericon"
+            app:shapeAppearanceOverlay="@style/circularStyle"
+            app:strokeColor="#00BCd4"
+            app:strokeWidth="3dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_pointarrow"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/otherUserProfilePic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:src="@drawable/usericon"
+            app:shapeAppearanceOverlay="@style/circularStyle"
+            app:strokeColor="#00BCd4"
+            app:strokeWidth="3dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userPickPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12sp">
+
+        <TextView
+            android:id="@+id/currentUserPDF"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/editbook"
+            android:drawableStart="@drawable/ic_dropdown"
+            android:drawablePadding="10dp"
+            android:hint="Escolha o livro"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/otherUserPdf"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/editbook"
+            android:drawableStart="@drawable/ic_dropdown"
+            android:drawablePadding="10dp"
+            android:hint="Escolha o livro"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enviarTrade"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/four_corners"
+        android:backgroundTint="@color/logo_color"
+        android:gravity="center"
+        android:text="Enviar"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

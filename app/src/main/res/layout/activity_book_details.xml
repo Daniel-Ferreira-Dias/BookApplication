@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BookDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/logo_color">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Detalhes do livro"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:padding="10dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/pdfRL"
+                    android:layout_width="110dp"
+                    android:layout_height="150dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#ACACAC">
+                    <!--PDF View-->
+                    <com.github.barteksc.pdfviewer.PDFView
+                        android:id="@+id/pdfViewer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <!--Progress Bar-->
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+                <!--Book Title-->
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/pdfRL"
+                    android:text="Book Title"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--Encrypted-->
+
+                <ImageButton
+                    android:id="@+id/lockedImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_lock_25" />
+
+                <!--Category-->
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleTv"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/pdfRL"
+                    android:text="Categoria" />
+
+                <TextView
+                    android:id="@+id/categoryTextFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleTv"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/categoryTextView"
+                    android:text="N/A" />
+
+                <!--Autor-->
+                <TextView
+                    android:id="@+id/autorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryTextFinal"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/pdfRL"
+                    android:text="Autor" />
+
+                <TextView
+                    android:id="@+id/autorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryTextView"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/autorText"
+                    android:text="N/A" />
+
+                <!--Total Reviews-->
+
+                <TextView
+                    android:id="@+id/totalReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/autorText"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/pdfRL"
+                    android:text="Reviews | " />
+
+                <TextView
+                    android:id="@+id/totalReviewstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/autorName"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/totalReviews"
+                    android:text="N/A " />
+
+                <!--Rating-->
+
+                <TextView
+                    android:id="@+id/currentReviewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalReviews"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/pdfRL"
+                    android:text="Rating " />
+
+                <RatingBar
+                    android:id="@+id/userRating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalReviewstext"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/currentReviewText"
+                    android:focusable="false"
+                    android:isIndicator="true" />
+
+                <!--Book Size-->
+                <TextView
+                    android:id="@+id/sizeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/pdfRL"
+                    android:text="Size"
+                    android:textSize="12sp" />
+
+                <!--Book Time posted-->
+                <TextView
+                    android:id="@+id/bookTimeStamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categoryTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="dd/mm/yyyy" />
+
+            </RelativeLayout>
+
+
+            <!--Published Id-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/PostedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Publicado por" />
+
+                <TextView
+                    android:id="@+id/publisherId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/PostedText"
+                    android:text="N/A"
+                    android:textColor="#3D8C93" />
+
+                <TextView
+                    android:id="@+id/addFavesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/favoriteImage"
+                    android:text="Adicionar aos Favoritos" />
+
+                <ImageButton
+                    android:id="@+id/favoriteImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_favorite_empty"
+                    android:padding="5dp" />
+
+            </RelativeLayout>
+
+            <!--Book Desc-->
+
+            <TextView
+                android:id="@+id/bookDescricaoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/bookDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="The description of the book" />
+
+            <!--View to seperate from comments-->
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:background="#AAABAC" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textColor="@color/black" />
+
+                <!--Adicionar Comentários-->
+
+                <ImageButton
+                    android:id="@+id/commentBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_addcomment" />
+
+                <!--Recycler View : Ver os comentários-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentsRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/commentBtn"
+                    android:layout_marginBottom="50dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_comments" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bootOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/readBookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/four_corners"
+            android:backgroundTint="@color/logo_color"
+            android:drawableTop="@drawable/ic_book"
+            android:text="Ler"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/downloadBookBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/four_corners"
+            android:backgroundTint="@color/logo_color"
+            android:drawableTop="@drawable/ic_baseline_picture_as_pdf_24"
+            android:text="Download"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

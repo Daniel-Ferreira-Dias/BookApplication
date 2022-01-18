@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado: "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/statusText"
+            android:text="Estado"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/deleteTrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado"
+            android:src="@drawable/ic_delete_red"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="1dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/userInteraction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5sp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/currentUserProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:padding="5dp"
+                android:src="@drawable/usericon"
+                app:shapeAppearanceOverlay="@style/circularStyle"
+                app:strokeColor="#00BCd4"
+                app:strokeWidth="3dp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_baseline_compare_arrows_24"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/otherUserProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:padding="5dp"
+                android:src="@drawable/usericon"
+                app:shapeAppearanceOverlay="@style/circularStyle"
+                app:strokeColor="#00BCd4"
+                app:strokeWidth="3dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/userPickPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userInteraction"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5sp">
+
+            <TextView
+                android:id="@+id/currentUserPDF"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/editbook"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/otherUserPdf"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/editbook"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userPickPdf"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Código: " />
+
+            <TextView
+                android:id="@+id/bookCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userPickPdf"
+            android:layout_marginStart="30dp"
+            android:layout_toRightOf="@id/textView"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherUserPdf"
+                android:text="Código: " />
+
+            <TextView
+                android:id="@+id/otherbookCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5sp">
+
+            <Button
+                android:id="@+id/rejectBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/four_corners"
+                android:backgroundTint="#D38080"
+                android:text="Rejeitar"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/acceptBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:background="@drawable/four_corners"
+                android:backgroundTint="@color/logo_color"
+                android:text="Aceitar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

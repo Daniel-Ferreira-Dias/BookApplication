@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_dialog_corner"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Deixe a sua review"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#CECFCF" />
+
+    <RatingBar
+        android:id="@+id/ratingStars"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/ratingStars"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:src="@drawable/usericon"
+        app:shapeAppearanceOverlay="@style/circularStyle"
+        app:strokeColor="#00BCd4"
+        app:strokeWidth="3dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingStars"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toRightOf="@id/profilePic"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reviewTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:backgroundTint="#F1EEEE"
+            android:gravity="top"
+            android:hint="Escreva aqui a sua review"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="7"
+            android:maxLength="200"
+            android:maxLines="7"
+            android:padding="10dp"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submitComment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reviewText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/four_corners"
+        android:backgroundTint="@color/logo_color"
+        android:text="Enviar"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

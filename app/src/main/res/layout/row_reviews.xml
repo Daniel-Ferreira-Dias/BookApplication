@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pdfViewerLayout"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="#CAC7C7">
+
+            <!--PDF View-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_height="100dp"
+                app:cardCornerRadius="1sp">
+
+                <com.github.barteksc.pdfviewer.PDFView
+                    android:id="@+id/pdfView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!--Progress Bar-->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <!--Imagem de perfil do utilizador-->
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:padding="5sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_default"
+            app:shapeAppearanceOverlay="@style/circularStyle"
+            app:strokeColor="#E6E6E6"
+            app:strokeWidth="1dp" />
+
+
+        <TextView
+            android:id="@+id/userProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/profilePic"
+            android:text="Daniel Dias"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/userText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@id/userProfileName"
+            android:text="deixou a sua review no livro "
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userText"
+            android:layout_marginStart="10sp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:text="N/A"
+            android:textColor="#009688"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/userRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookTitle"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/profilePic"
+            android:focusable="false"
+            android:isIndicator="true" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

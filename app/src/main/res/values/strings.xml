@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BookApplicationV1</string>
+    <string name="animated_Text">Seja bem vindo! Nesta aplicação pode consultar as reviews dos seus livros favoritos e ter a oportunidade de colecionar os mesmos.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Categoria">
+        <item>Informática</item>
+        <item>Comédia</item>
+        <item>Terror</item>
+        <item>Drama</item>
+        <item>Acção</item>
+        <item>Romance</item>
+        <item>Educação</item>
+        <item>Anime</item>
+    </string-array>
+</resources>

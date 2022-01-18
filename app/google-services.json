@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773163440084",
+    "project_id": "bookloverit-de7b2",
+    "storage_bucket": "bookloverit-de7b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773163440084:android:e54e69cb40b51d5f306841",
+        "android_client_info": {
+          "package_name": "com.example.bookapplicationv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773163440084-l7mfudgvnv7c2082snnsijlu8k0s9c4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF9dzbAZInh8SxH9rC6cw0_G0WvSdzwU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773163440084-l7mfudgvnv7c2082snnsijlu8k0s9c4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

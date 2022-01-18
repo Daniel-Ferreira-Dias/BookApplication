@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/drawable/button_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/drawable/edit_text_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/drawable/for_underscore.xml" value="0.2140625" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/drawable/ic_finalsplash.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/drawable/vie_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/layout/activity_dashboard.xml" value="0.17280701754385966" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/layout/activity_main.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookApplicationV1/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable-v24/sent_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/bottomsheet_dialog_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/button_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/drawable.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/edit_text_bg.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/editbook.xml" value="0.25625" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/editprofile_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/for_underscore.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/four_corners.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/ic_baseline_manage_search_24.xml" value="0.25625" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/ic_baseline_menu_open_25.xml" value="0.25625" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/ic_profile.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/layout_bg_xm.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/lower_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/profile_pic.xml" value="0.25625" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/recieve_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/shape_rect02.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/shaperect.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/spinner_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/teste.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/upper_corner.xml" value="0.3828125" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/drawable/vie_bg.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_add_book.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_book_details.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_changed_password.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_changed_password_fragment.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_dashboard.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_edit_book.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_edit_profile.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_forgot_password.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_fragment_manager.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_fragment_manasher.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_pdf_view.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/activity_user_profile.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/dialog_comment_add.xml" value="0.3645833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_custom_trade.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_dialog_changepassword.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_dialog_comment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_editemail_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_encrypted_dialog.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_message.xml" value="0.33" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/fragment_search.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/modal_diagram_layout.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/recieve.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_books.xml" value="0.25" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_comments.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_favorites.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_mycollection.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_reviews.xml" value="0.3500905797101449" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/row_trade.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/sent.xml" value="0.22" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/layout/user_layout.xml" value="0.33" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/danie/AndroidStudioProjects/BookLoverIT/BookApplicationV1/app/src/main/res/menu/popup.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

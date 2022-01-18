@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_rect02"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:src="@drawable/ic_cancel" />
+
+    <TextView
+        android:id="@+id/changeEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mudar de email"
+        android:layout_toRightOf="@id/backBtn"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:id="@+id/actualEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email atual"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@id/changeEmailText"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Novo email"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:layout_below="@id/actualEmail"
+        android:padding="5dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_below="@id/editEmail"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/edit_text_bg"
+            android:padding="5dp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/ConfirmBtnChangeEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/four_corners"
+        android:backgroundTint="@color/logo_color"
+        android:text="Enviar"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
