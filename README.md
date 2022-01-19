@@ -9,3 +9,9 @@ Book Lovers é uma aplicação destinada a utilizadores com interesse na área d
 Todas as funcionalidades anteriormente descritas são demonstradas neste video.
 
 [![Watch the video](https://i.imgur.com/kFVsqqi.png)](https://www.youtube.com/watch?v=e-wTwXpY8XM&ab_channel=DanielDias)
+
+## Tecnologias Utilizadas
+
+- [Kotlin](https://kotlinlang.org/)
+- [Firebase](https://firebase.google.com/)
+- [XML](https://www.w3schools.com/xml/)
